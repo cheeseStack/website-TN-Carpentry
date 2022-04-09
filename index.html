@@ -1,0 +1,573 @@
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="description" content="Carpentry and building specialist based in Belf">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Below: custom css file in css/main/min/css -->
+    <link rel="stylesheet" href="/css/main.min.css">
+
+    <!-- Below: Main Bootstrap Link -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+     crossorigin="anonymous"> -->
+
+     <link rel="stylesheet" href="styles.css">
+     
+    <!-- Below: Bootstrap icons CDN link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <title>TN Carpentry & Building</title>
+    
+</head>
+<body>
+    <div id="home"></div>
+    
+    <!-- navbar -->
+<nav class=" navbar navbar-expand-md fixed-top navbar-light bg-gray-light">
+    <div class="container-md">
+        <!-- From left: 1: brand or logo that links to the intro -->
+        <a href="#home" class="navbar-brand page-scroll">
+            <span class="fw-bold text-gray-dark">
+                <!-- below: bootstrap book icon -->
+                <h5>
+                <img src="./logo/tnclogo2.png" alt="" class="img-fluid logo d-inline-block align-text-center" id="logo"></i>
+                <small>TN Carpentry & Building</small></br>
+                </a>
+            </h5>
+        
+        <!-- toggle button for mobile nav -->
+        <button class="navbar-toggler" type ="button" data-bs-toggle="collapse" 
+        data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+        aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav">
+                <!-- Below: link item_1 -->
+                <li class="nav-item ms-2" data-target="#sidenav-collapse-main" data-toggle="collapse">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <!-- Below: link item21 -->
+                <li class="nav-item ms-2" data-target="#sidenav-collapse-main" data-toggle="collapse">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <!-- Below: link item_3 -->
+                <li class="nav-item ms-2" data-target="#sidenav-collapse-main" data-toggle="collapse">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <!-- Below: link item_4 -->
+                <li class="nav-item  ms-2" data-target="#sidenav-collapse-main" data-toggle="collapse">
+                    <a href="#portfolio" class="nav-link ">Portfolio</a>
+                </li>
+                <li class="nav-item ms-2 " data-target="#sidenav-collapse-main" data-toggle="collapse">
+                    <a href="#reviews" class="nav-link ">Reviews</a>
+                </li>
+                
+                <!-- Below: link item_5 -->
+                <li class="nav-item ms-2 d-inline" data-target="#sidenav-collapse-main" data-toggle="collapse">
+                    <a href="#enquire" class=" nav-link btn btn-secondary-green">Contact</a>
+                </li>
+                <li class="nav-item d-inline d-md-none ms-3" data-target="#sidenav-collapse-main" data-toggle="collapse">
+                    <a href="tel:+447861975084" class="nav-link btn-outline-primary" ><i class="bi bi-telephone-fill"></i>      Call Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+    <!-- main image & intro text -->
+<section id="home" class="text-gray-dark navig">
+    <div class="container-md">
+        <div class="row justify-content-center align-items-center">
+            <!-- col_1 Start -->
+            <div class=" col-10 col-md-6 text-center text-md-start">
+                <h1>
+                    <div class="display-4">Loft Conversions</div>
+                    <div class="display-5 text-muted">Extensions & Renovations</div>
+                </h1>
+
+                
+                <p class="my-4 text-muted lead d-none d-md-block">Speak to us about your home renovation or extension project</p>
+                <p class="my-4 text-muted ">We take on projects in and around the <strong>Belfast</strong> area</p>
+                <a href="#enquire" class="btn btn-secondary-green btn-md mb-2">Contact</a>
+                <p class="d-none d-md-block">FREE Estimates</p>
+
+                <!-- open sidebar / offcanvas to promote other products:https://getbootstrap.com/docs/5.1/components/offcanvas/  -->
+           <!-- <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+               Explore my other books
+           </a> -->
+           <!-- the offcanvas function is at the VERY BOTTOM of the HTML page -->
+            </div>
+            <!-- col_1 End  -->
+            <!-- col_2 Start -->
+            <div id="home" class="col-md-5 text-center">
+                <!-- featured block component -->
+          <div class="featured-block">
+            <div class="featured-block-badges">
+              <span class="badge bg-primary text-white">
+                <i class="bi bi-house-heart-fill me-1"></i>Loft Conversion
+              </span>
+              <!-- <span class="badge bg-primary text-white">
+                <i class="bi bi-clock-fill me-1"></i> Quick Dish
+              </span> -->
+            </div>
+            <img class="img-fluid" src="./photos/loft/loft_fin_2.jpeg" alt="recipe image">
+          </div>
+
+                <!-- Tooltips: https://getbootstrap.com/docs/5.1/components/tooltips/  -->
+                <!-- class of "tt" for use in JavaScript. See bottom of body for script function-->
+                <!-- <span class="tt" data-bs-placement="bottom" title="Net Ninja book cover"><img class="img-fluid d-none d-md-block" src="assets\ebook-cover.png" alt="ebook cover"></span> -->
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="my-5 text-gray-dark bg-gray-light">
+    <div class="container-lg">
+        <div class="row justify-content-center align-items-center">
+            <p class="display-6 text-center" ><i class="bi bi-file-earmark-person me-4"></i>About Us</p> 
+            <!-- col_1 Start -->
+            <div id="about" class=" col-8 col-3 col-md-4 text-center">
+                  <!-- Tooltips: https://getbootstrap.com/docs/5.1/components/tooltips/  -->
+                <!-- class of "tt" for use in JavaScript. See bottom of body for script function -->
+                <span class="tt" data-bs-placement="bottom" title="Tom"><img class="img-fluid card rounded shadow shadow-md text-center" src="./logo/tom_1.jpg" width="350px" alt="Tom"></span>
+            </div>
+
+            <div class="col-12 col-md-8 text-center text-md-start">
+                <h1>
+                    <!-- <i class="bi bi-file-person-fill d-inline-block"></i> -->
+                    
+                    <p class="display-6 "><img src="./logo/tnclogo1.png" alt="logo" class="d-none d-md-inline-block md-2 me-3" width="110px">TN Carpentry & Building </p>              
+                    <div class="display-7 text-muted">Qualified, Insured & Highly Experienced</div>
+                </h1>
+                <p class="my-4 text-muted lead">TN Carpentry & Building is owned and run by Tom Naisbit. 
+                <p>Based in Belfast, we specialise in loft conversions, extensions and renovations.</p>
+                <p class="d-none d-md-block">For over 15 years, with the help of a trusted team of skilled tradespeople, we have been delivering excellent results on high-end domestic renovations and extensions.</p>
+                
+                <p class="d-none d-md-block">We handle all aspects of the planning, design, project management, and build phases. 
+                <br class="d-none d-md-block">You will be consulted at all critical stages to to ensure you get your dream project is made a reality. </p>
+                
+
+                <!-- open sidebar / offcanvas to promote other products:https://getbootstrap.com/docs/5.1/components/offcanvas/  -->
+           <!-- <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+               Explore my other books
+           </a> -->
+           <!-- the offcanvas function is at the VERY BOTTOM of the HTML page -->
+            </div>
+            <!-- col_1 End  -->
+            
+        </div>
+    </div>
+</section>
+
+
+    <!-- services -->
+    <section id="services" class="mt-1">
+        <div class="container-lg">
+            <!-- Pricing plans title -->
+            <div class="text-center">
+                <h2 class="display-6"><i class="bi bi-hammer me-4"></i>Services</h2>
+                <p class="lead text-muted">Some of the services we provide...</p>
+            </div>
+            <!-- Below: pricing options go in a grid after the row container-->
+            <div class="row align-items-center justify-content-center">
+                <div class="col-11 lg-col-7">
+                <div id="services" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./photos/loft/loft_fin_2.jpeg" class="d-block w-100" alt="loft">
+                        <div class="carousel-caption d-none d-md-block text-dark">
+                          <h5>Loft Conversions</h5>
+                          <p>Create extra space, without the hassle of moving.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./photos/kitchen/kitchen_7.jpg" class="d-block w-100" alt="kitchen">
+                        <div class="carousel-caption d-none d-md-block text-dark">
+                          <h5>Kitchens</h5>
+                          <p>Beautifully modern kitchens, designed and fitted to your personal needs.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./photos/garden/garden_6.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Garden Rooms</h5>
+                          <p>Create some amazing outdoor spaces for a home office, gym, or music room.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+            </div>
+
+    </section>
+
+
+
+    <!-- topics at a glance -->
+    <section id="portfolio" class="text-gray-dark bg-gray-light">
+        <div class="container-lg">
+            <!-- Heading -->
+            <div class="text-center">
+                <h2 class="display-6"><i class="bi bi-archive-fill me-5"></i>Portfolio</h2>
+                <p class="text-muted lead">Take a look at some of our projects</p>
+            </div>
+            <!-- Below: grid container -->
+            <div class="row g-3 justify-content-center align-items-center">
+                
+                 <!-- for small screens, have full width -->
+            <div class="col-md-10 my-1">
+                <!-- accordion section-->
+                <div class="accordion" id="chapters">
+                    <!-- 1st accordion Start-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-1">
+                            <button class="accordion-button" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#chapter-1" 
+                            aria-expanded="true" aria-controls="chapter-1" >Loft conversion in Belfast</button>
+                        </h2>
+                        <!-- content of 1st accordion -->
+                        <div id="chapter-1"class="accordion-collapse collapse show" 
+                        aria-labelledby="heading-1" data-bs-parent="#chapters">
+                        <div class="acordion-header text-center text-muted display-7">Loft conversion</div>
+                        <div class="accordion-body">
+                               <!-- CSS GRID -->
+                                <div id="content">
+                                <div class="one loft"><img src="./photos/loft/loft_1.jpg" alt="loft_1"></div>
+                                <div class="two loft"><img src="./photos/loft/loft_2.jpg" alt="loft_1"></div>
+                                <div class="three loft"><img src="./photos/loft/loft_3.jpg" alt="loft_1"></div>
+                                <div class="four loft"><img src="./photos/loft/loft_4.jpg" alt="loft_1"></div>
+                                <div class="five loft"><img src="./photos/loft/loft_5.jpg" alt="loft_1"></div>
+                                <div class="six loft"><img src="./photos/loft/loft_fin_1.jpeg"alt="loft_1"></div>
+                                <!-- <div class="seven loft"><img src="./photos/loft/loft_fin_2.jpeg" alt="loft_1"></div> -->
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- 1st accordion End-->
+                    <!-- 2nd accordion Start-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-2">
+                            <button class="accordion-button" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#chapter-2" 
+                            aria-expanded="true" aria-controls="chapter-2">Garden Room in Brighton</button>
+                        </h2>
+                        <!-- content of 2nd accordion -->
+                        <div id="chapter-2"class="accordion-collapse collapse" 
+                        aria-labelledby="heading-2" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <!-- CSS GRID -->
+                            <div id="content">
+                                <div class="one garden"><img src="./photos/garden/garden_1.jpg" alt="garden_1"></div>
+                                <div class="two garden"><img src="./photos/garden/garden_2.jpg" alt="garden_1"></div>
+                                <div class="three garden"><img src="./photos/garden/garden_3.jpg" alt="garden_1"></div>
+                                <div class="four garden"><img src="./photos/garden/garden_4.jpg" alt="garden_1"></div>
+                                <div class="five garden"><img src="./photos/garden/garden_5.jpg" alt="garden_1"></div>
+                                <div class="six garden"><img src="./photos/garden/garden_6.jpg"alt="garden_1"></div>
+                                <!-- <div class="seven loft"><img src="./photos/loft/loft_fin_2.jpeg" alt="loft_1"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd accordion End-->
+                    <!-- 3rd accordion Start-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-3">
+                            <button class="accordion-button" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#chapter-3" 
+                            aria-expanded="true" aria-controls="chapter-3" >Kitchen with Corian Worktops</button>
+                        </h2>
+                        <!-- content of 3rd accordion -->
+                        <div id="chapter-3"class="accordion-collapse collapse" 
+                        aria-labelledby="heading-3" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <div id="content">
+                                <div class="one kitchen"><img src="./photos/kitchen/kitchen_1.jpg" alt="kitchen_1"></div>
+                                <div class="two kitchen"><img src="./photos/kitchen/kitchen_2.jpg" alt="kitchen_1"></div>
+                                <div class="three kitchen"><img src="./photos/kitchen/kitchen_3.jpg" alt="kitchen_1"></div>
+                                <div class="four kitchen"><img src="./photos/kitchen/kitchen_5.jpg" alt="kitchen_1"></div>
+                                <div class="five kitchen"><img src="./photos/kitchen/kitchen_6.jpg" alt="kitchen_1"></div>
+                                <div class="six kitchen"><img src="./photos/kitchen/kitchen_7.jpg"alt="kitchen_1"></div>
+                                <!-- <div class="seven loft"><img src="./photos/loft/loft_fin_2.jpeg" alt="loft_1"></div> -->
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- 3rd accordion End-->
+                    <!-- 4th accordion Start-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-4">
+                            <button class="accordion-button" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#chapter-4" 
+                            aria-expanded="true" aria-controls="chapter-4" >Joinery & Under-stairs Cupboards</button>
+                        </h2>
+                        <!-- content of 4th accordion -->
+                        <div id="chapter-4"class="accordion-collapse collapse" 
+                        aria-labelledby="heading-4" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <!-- 4th card (same as 1st) -->
+                                <div id="content">
+                                <div class="one joinery"><img src="./photos/joinery/joinery_1.jpg" alt="joinery_1"></div>
+                                <div class="two joinery"><img src="./photos/joinery/joinery_2.jpg" alt="joinery_1"></div>
+                                <div class="three joinery"><img src="./photos/joinery/joinery_3.jpg" alt="joinery_1"></div>
+                                <div class="four joinery"><img src="./photos/joinery/joinery_4.jpg" alt="joinery_1"></div>
+                                <div class="five joinery"><img src="./photos/joinery/joinery_5.jpg" alt="joinery_1"></div>
+                                <!-- <div class="six joinery"><img src="./photos/joinery/joinery_7.jpg"alt="joinery_1"></div> -->
+                                <!-- <div class="seven loft"><img src="./photos/loft/loft_fin_2.jpeg" alt="loft_1"></div> -->
+                            
+                    
+                        </div>
+                    </div>
+                    <!-- 4th accordion End-->
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- reviews list -->
+    <!-- uses List Groupt: https://getbootstrap.com/docs/5.1/components/list-group/ -->
+    <!-- Bootstrap Icons:  -->
+    <section id="reviews" class="bg-">
+        <div class="container-lg">
+            <!-- Below: Title and text about section -->
+            <div class="text-center">
+                <h2><i class="bi bi-stars text-altdark"></i>Customer Reviews</h2>
+            </div>
+            <!-- List of reviews in a grid to minimise the width of the group for 1 column-->
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <!-- list items -->
+                        <!-- 1st list item -->
+                        <div class="list-group-item py-3">
+                            <!-- Below: adding Bootstrap star icons to reviews -->
+                            <div class="pb-2">
+                                <!-- <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i> -->
+                            </div>
+                            <!-- Star rating end -->
+                            <h5 class="mb-1"><em>Customer reviews will be updated soon...</em></p>
+                            <small>Review by ... </small>
+                        </div>
+                        <!-- 2nd list item -->
+                        <!-- <div class="list-group-item py-3"> -->
+                            <!-- Below: adding Bootstrap star icons to reviews --> 
+                            <!-- <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div> -->
+                            <!-- Star rating end
+                            <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Dignissimos minima omnis enim eius excepturi suscipit ut, 
+                                facilis itaque deserunt animi.</p>
+                            <small>Review by Mario</small>
+                        </div>
+                        <!-- 3rd list item -->
+                        <!-- <div class="list-group-item py-3"> -->
+                            <!-- Below: adding Bootstrap star icons to reviews --> 
+                            <!-- <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <!-- Star rating end -->
+                            <!-- <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Dignissimos minima omnis enim eius excepturi suscipit ut, 
+                                facilis itaque deserunt animi.</p>
+                            <small>Review by Mario</small> --> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- contact form -->
+    <!-- Forms page: https://getbootstrap.com/docs/5.1/forms/overview/ -->
+    <!-- form-control; form-lebel; form-select; input-group; input-group-text -->
+    <section id="enquire" class="text-gray-dark bg-green-light ">
+        <div class="container-lg">
+            <!-- Below: title and subtitle -->
+            <div class="text-center">
+                <h2><i class="bi bi-envelope-fill me-5"></i>Get in Touch <i class="bi bi-telephone-fill ms-4"></i></h2>
+                <!-- <p class="lead">Projects to discuss?</p> -->
+                <p class="lead">Fill out the form below or call Tom directly on <a href="tel:+447861975084">+447861 975084</a></p>
+                
+                <p>Please add any extra details, such as architectural plans, drawings or photos after you click the Submit button.</p>
+                
+                <p>Tom will get in touch ASAP to discuss your project.</p>
+            </div>
+            <!-- Form in a row to control response size -->
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <!-- form below: frontend only -->
+                    <!-- <form action="mailto:info@tncbuilding.co.uk?subject=MessageFromWebsite" method="post" enctype="text/plain" id="myform" target="_blank"> -->
+                    <form>
+                        <!-- Select field  for query-->
+                        <label for="subject" class="form-label">What is your enquiry about?</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill"></i>
+                            </span>
+                            <select class="form-select"  id="project" name="yourProjectType">
+                            <option value="loft" selected>Loft conversion</option>
+                            <option value="kitchen" >Kitchen</option>
+                            <option value="Bathroom" >Bathroom</option>
+                            <option value="Extension" >Extension</option>
+                            <option value="Garden room" >Garden room</option>
+                            <option value="General carpentry" >General carpentry</option>
+                            <option value="other" >Other query</option>
+                        </select>
+                        </div>                     
+                        <!-- Name -->
+                        <label for="name" class="form-label">Name:</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                           <input type="text" class="form-control" id="name" name="yourName"placeholder="e.g. John Smith " required> 
+                           <!-- Tooltip for inputs start -->
+                           <!-- <span class="input-group-text">
+                            <span class="tt" data-bs-placement="bottom" title="Enter your full name">
+                              <i class="bi bi-question-circle text-muted"></i>  
+                            </span>
+                        </span> -->
+                        <!-- Tooltip for inputs End -->
+                        </div>
+                        <!-- Email -->
+                        <label for="email" class="form-label">Email address:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" name="yourEmail: "placeholder="e.g. mario@example.com"  required>
+                            <!-- Tooltip for inputs start -->
+                            <!-- <span class="input-group-text">
+                                <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to">
+                                  <i class="bi bi-question-circle text-muted"></i>  
+                                </span>
+                            </span> -->
+                            <!-- Tooltip for inputs End -->
+                        </div>
+                        <!-- Phone number -->
+                        <label for="phone" class="form-label">Enter your phone number:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-phone-fill"></i>
+                            </span>
+                            <input class="form-control" type="tel" id="phone" name="yourPhoneNumber" required><br><br>
+                        </div>
+                        <!-- Address -->
+                        <label for="address" class="form-label">Address (first line):</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-house-fill"></i>
+                            </span>
+                           <input type="text" class="form-control" id="address_2" placeholder="e.g. 123 The Lane" name="yourAddress" required>
+                        </div>
+                        <label for="address" class="form-label">Postcode:</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-house-fill"></i>
+                            </span>
+                           <input type="text" class="form-control" id="address_2" placeholder="e.g. BT1 1AA"  name="yourPostcode"required>
+                        </div>
+                     <!-- Below: insert a floating label for the query box: -->
+                        <div class="form-floating my-4">
+                            <textarea id="query" cols="30" rows="10" class="form-control" style="height:140px" name="yourMessage"></textarea>
+                            <label for="query">Please provide details of your projects here...  </label>
+                        </div>
+                        <!-- submit button -->
+                        <div class="mb-4 text-center">
+                            <!-- <a href="mailto:info@tncbuilding.co.uk" target="_blank"><button class="btn btn-secondary-green button" type="submit" id="mailtolink">Submit</button></a> -->
+                            <a target="_blank" class="btn btn-secondary-green submit-button"  href="mailto:info@tncbuilding.co.uk" id="mailtolink"><span>Submit</span></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="bg-light">
+        <div class="grid">
+            <p class="copyright">Copyright 2022 cheeseStack</p>
+            <ul class="socials">
+                <li><em><small> Social media links coming soon...</small></em></li>
+                <li><a href=""><img src="./socials/fb_icon.png" alt="facebook"></a></li>
+                <li><a href=""><img src="./socials/insta_colour_icon.svg" alt="instagram"></a></li>
+            </ul>
+        </div>
+        <div class="grid">
+            <ul class="tel-email">
+                <li class="tel"><a href="tel:+447861975084">Call Tom on:<br>07861 975084</a></li>
+                <li class="mailto"><a href="mailto:info@tncbuilding.co.uk">email: <br>info@tncbuilding.co.uk</a></li>
+            </ul>
+        </div>
+        
+    </footer>
+
+   
+
+
+<!-- JavaScript CDN and function for Tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt');
+        tooltips.forEach(t => {
+            new.bootstrap.Tooltip(t);
+        });
+    </script>
+    <!-- JS file for fixing href links behind nav bar -->
+    <script src="./script.js"></script>
+    <script>
+        $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
+    </script>
+
+</body>
+</html>

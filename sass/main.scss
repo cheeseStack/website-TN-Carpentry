@@ -1,0 +1,232 @@
+// Copy and paste Google fronts here, and reference after @import "../node_modules/bootstrap/scss/functions";
+// load custom font from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// import functions first (so you can use them in this file)
+@import "../node_modules/bootstrap/scss/functions";
+
+// redefine variables not dependent on anything else
+
+// GLOBAL VARIABLES
+// $enable-rounded: false;
+// $enable-button-pointers: false;
+$enable-negative-margins: true;
+// $enable-smooth-scroll: false;
+
+// THE COLOR VARIABLES
+// $primary: #ff3287;
+// $secondary: #16be7e;
+// $light: #fff9f1;
+
+
+// FONT FAMILY 
+$font-family-base: "Poppins";
+
+
+// FONT SIZE BASE
+$font-size-base: 1rem;
+// Lead font size:
+$lead-font-size: $font-size-base *1.2;
+
+// HEADINGS: 
+$headings-font-weight: 300;
+$headings-line-height: 1.5;
+$h1-font-size: $font-size-base *2.75;
+
+// DISPLAY Headings
+// add a Display-7:
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+  7: 2rem
+);
+
+
+
+// SCREEN SIZE BREAKPOINTS
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  tablet: 768px,
+  laptop: 992px,
+  desktop: 1200px
+);
+
+// GRID COLUMNS
+// default is 12
+// $grid-columns: 12;
+
+
+// SAPACER & BORDER UTILITIES (PADDING)
+// padding
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+// Borders
+$border-width: 1px;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+);
+// $border-color: $primary;
+
+
+// import variables and mixins files (so you can use them below)
+// any redefined vars above will be incorporated into the files (e.g. in maps)
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// LINKS 
+$link-color: $secondary;
+$link-decoration: none;
+$link-hover-decoration: underline;
+$link-shade-percentage: 30%;
+// make links darker when hovered over
+$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+// make links lighter when hovered over
+// $link-hover-color: shift-color($link-color, -$link-shade-percentage) !default;
+
+
+
+
+
+// anything that depends on variables/mixins file defined below
+
+// .btn-truncate {
+//   max-width: 100px;
+//   @include text-truncate;
+// }
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  // custom colors:abs($number: "primary-light": #fff8fb,
+  "primary-light": #fff8fb,
+  "secondary-light": #f6fffb,
+    "custom-color": #900,
+    "pink": rgb(161, 41, 155),
+"primary-pink": #ff3287,
+"secondary-green": #16be7e
+);
+
+
+// remove colors from theme
+// $theme-colors: map-remove($theme-colors, "danger");
+
+
+// ADD COLORS TO COLOR PALETTE
+// see colors here: https://getbootstrap.com/docs/5.1/customize/color/
+@each $color, $val in $colors{
+    .bg-#{$color}{
+        background-color: $val
+    }
+    .bg-#{$color}-light{
+        background-color: tint-color($val, 80%)
+    }
+    .bg-#{$color}-dark{
+        background-color: shade-color($val, 30%)
+    }
+    .text-#{$color}{
+        color: $val
+    }
+    .text-#{$color}-light{
+        color: tint-color($val, 80%)
+    }
+    .text-#{$color}-dark{
+        color: shade-color($val, 30%)
+    }
+    .btn-#{$color}{
+        color: $val
+    }
+    .btn-#{$color}-light{
+        color: tint-color($val, 80%)
+    }
+    .btn-#{$color}-dark{
+        color: shade-color($val, 30%)
+    }
+}
+
+
+//UTILITY API: CUSTOM UTILITIES
+@import "../node_modules/bootstrap/scss/utilities";
+
+$custom-utilities: (
+    "rotate": (
+        property: transform,
+        class:rotate,
+        state: hover,
+        values: (
+            0: rotate(0deg),
+            20: rotate(20deg),
+            40: rotate(40deg),
+            60: rotate(60deg),
+            80: rotate(80deg),
+            100: rotate(100deg),
+            120: rotate(120deg),
+            140: rotate(140deg),
+            160: rotate(160deg),
+            180: rotate(180deg),
+            n20: rotate(-20deg),
+            n40: rotate(-40deg),
+            n60: rotate(-60deg),
+            n80: rotate(-80deg),
+            n100: rotate(-100deg),
+            n120: rotate(-120deg),
+            n140: rotate(-140deg),
+            n160: rotate(-160deg),
+            n180: rotate(-180deg),
+        )
+    ),
+    "opacity": (
+    property: opacity,
+    class: o,
+    state: hover,
+    values: (
+      0: 0,
+      25: .25,
+      50: .5,
+      75: .75,
+      100: 1,
+    )
+  ),
+);
+
+$utilities: map-merge($utilities, $custom-utilities);
+
+
+// MODIFYING UTILITIES
+// SEE VIDEO HERE: https://netninja.dev/courses/customizing-bootstrap-5/lectures/33016185
+
+
+//CUSTOM COMPONENT
+
+
+
+// import bootstrap whole sass lib (incorporates all above redefined vars & values)
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./featured";

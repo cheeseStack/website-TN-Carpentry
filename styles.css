@@ -1,0 +1,196 @@
+
+#logo{
+    max-width: 65px;
+}
+
+section{
+    padding: 80px 0;
+   
+}
+
+.navig{
+    padding-bottom: 10px;
+    padding-top: 130px;
+}
+li{
+    list-style-type: none;
+}
+
+.carousel-item img{
+    width: 500px;
+    width: 100%;
+}
+
+.accordion-body img{
+    width: 400px;
+  
+}
+.btn-secondary-green{
+    border-radius:25px;
+}
+
+#enquire{
+    padding-bottom: 0;
+}
+
+/* styles for Portfolio photo gallery grid */
+
+
+/* Below: CSS Grid for Portfdolio section */
+#content{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 5px;
+    max-width: 960px;
+    margin: 5px auto;
+    padding: 0;
+}
+#content div{
+    /* background: #333;
+    padding: 5px; */
+    border: none;
+}
+.one{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+.two{
+    grid-column: 4 / 7;
+    grid-row: 1 / 2;
+}
+.three{
+grid-column: 1 / 3;
+grid-row: 2 / 3;
+}
+.four{
+    grid-column: 3  / 5;
+    grid-row: 2 / 3;
+}
+.five{
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+}
+.six{
+    grid-column: 1 / 7;
+    grid-row: 3 / 4;
+}
+/* .seven{
+    grid-column: 4 / 7;
+    grid-row: 3 / 4;
+} */
+
+/* rotate thhe grid on the Z axis */
+ /* #content{ */
+    /* transform: rotateZ(0deg) scale(0.7); */
+/* } */
+
+.accordion-body img{
+    width:100%;
+} 
+
+/* FOOTER with socials */
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    gap:10px;
+}
+
+footer {
+    
+    padding-top:10px 0;
+    justify-content:center;   
+}
+
+footer .copyright {
+    grid-column: 2/3;
+    grid-row: 1;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: start;
+}
+
+footer .socials {
+    grid-column: 5/8;
+    grid-row: 1;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: flex-end;
+    align-items: top;
+}
+footer .tel-email{
+    grid-column: 1 / 9;
+    grid-row: 2;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+}
+
+footer li.tel {
+    padding: 0 40px;
+}
+footer li.mailto {
+    padding: 0 40px;
+}
+
+footer li{
+    margin: 0 8px;
+}
+
+footer img{
+    width: 30px;
+}
+
+.submit-button {
+    font-size: 18px;
+    text-decoration: none;
+    background-color: btn-secondary-green;
+    /* background-color: #EEEEEE; */
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+  }
+
+
+
+/* .navbar{
+    /*   z-index should be above .close-navbar-toggler */
+      /* z-index:2;
+    }
+    .close-navbar-toggler{
+      position:absolute;
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+      z-index:1;
+      cursor:pointer;
+    }
+    .close-navbar-toggler.collapsed{
+      z-index:-1;
+    } */ 
+
+    /* make the padding smaller on mobiles */
+    @media screen and (max-width: 576px  ){
+
+        section {
+            padding: 10px 0;
+            margin: 5px auto
+        }     
+        .navbar{
+            padding: 0;
+            margin: 0;
+            font-size: 0.8em;
+        }
+        #services{
+            padding-top: 0;
+        }
+    }
+
+
+
+ 
